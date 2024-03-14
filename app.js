@@ -19,7 +19,7 @@ connection.connect((err) => {
         console.error('Error koneksi ke database MySQL: ' + err.stack);
         return;
     }
-    console.log('Terhubung dengan ID koneksi MySQL: ' + connection.threadId);
+    console.log('Konek Jink');
 });
 
 //definisikan lokasi folder agar dibaca express
@@ -81,18 +81,28 @@ app.get('/page-not-found', function(req, res) {
     res.render('missing');
 });
 
+//Menampilkan halaman admin (admin.ejs)
 app.get('/admin', function(req, res) {
     res.render('admin');
 
 });
 
+//Menangani permintaan untuk login sebagai admin
 app.post('/post-admin', (req, res) => {
-    const username = ['username'];
-    const password = ['password'];
+    const { username, password } = req.body;
 
-    if (username && password){
-        
-    }
+    // Query ke database untuk memeriksa kredensial admin
+    connection.query('SELECT * FROM admin WHERE username = ? AND password = ?', [username, password], (error, results, fields) => {
+        if (error) throw error;
+
+        // Jika kredensial valid, arahkan ke halaman admin
+        if (results.length > 0) {
+            res.redirect('/admin');
+        } else {
+            // Jika kredensial tidak valid, kembali ke halaman login
+            res.redirect('/login');
+        }
+    });
 });
 
 app.post('/post-form', (req, res) => {
