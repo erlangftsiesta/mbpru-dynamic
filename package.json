@@ -4,7 +4,8 @@
   "description": "untuk tempat pekael gwe, di MBPRU BANDUNG",
   "main": "app.js",
   "scripts": {
-    "test": "start"
+    "test": "start",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
