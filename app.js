@@ -8,7 +8,7 @@ const PORT = 3000;
 // Koneksi ke MySQL
 const connection = mysql.createConnection({
     host: 'localhost',
-    user: '', // Ganti dengan username MySQL Anda
+    user: 'root', // Ganti dengan username MySQL Anda
     password: '', // Ganti dengan password MySQL Anda
     database: 'kjpp_mbpru' // Ganti dengan nama database yang ingin Anda hubungkan
 });
