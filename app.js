@@ -102,6 +102,8 @@ app.post('/post-form', (req, res) => {
     const form_nomorTelepon = ['telepon'];
     const form_provinsi = ['provinsi'];
     const form_kotaKabupaten = ['kota-kabupaten'];
+    const form_provinsiAset = ['provinsi-aset'];
+    const form_kotaKabupatenAset = ['kota-kabupaten-aset'];
     const form_tujuanPenilaian = ['tujuan-penilaian'];
     const form_objekPenilaian = ['objek-penilaian'];
 

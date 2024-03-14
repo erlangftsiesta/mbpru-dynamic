@@ -1,1 +1,46 @@
-INI CONTACT MEK
+<!-- form.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir</title>
+</head>
+<body>
+    <h1>Formulir</h1>
+    <form action="/post-form" method="POST">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="handphone">Nomor Handphone:</label>
+        <input type="tel" id="handphone" name="handphone"><br>
+
+        <label for="telepon">Nomor Telepon:</label>
+        <input type="tel" id="telepon" name="telepon"><br>
+
+        <label for="provinsi">Provinsi:</label>
+        <input type="text" id="provinsi" name="provinsi"><br>
+
+        <label for="kota-kabupaten">Kota/Kabupaten:</label>
+        <input type="text" id="kota-kabupaten" name="kota-kabupaten"><br>
+
+        <label for="provinsi-aset">Provinsi Aset:</label>
+        <input type="text" id="provinsi-aset" name="provinsi-aset"><br>
+
+        <label for="kota-kabupaten-aset">Kota/Kabupaten Aset:</label>
+        <input type="text" id="kota-kabupaten-aset" name="kota-kabupaten-aset"><br>
+
+        <label for="tujuan-penilaian">Tujuan Penilaian:</label>
+        <input type="text" id="tujuan-penilaian" name="tujuan-penilaian"><br>
+
+        <label for="objek-penilaian">Objek Penilaian:</label>
+        <input type="text" id="objek-penilaian" name="objek-penilaian"><br>
+
+        <button type="submit">Kirim</button>
+    </form>
+</body>
+</html>
