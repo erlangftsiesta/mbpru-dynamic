@@ -18,8 +18,11 @@
   },
   "homepage": "https://github.com/erlangftsiesta/mbpru-dynamic#readme",
   "dependencies": {
+    "body-parser": "^1.20.2",
+    "connect-flash": "^0.1.1",
     "ejs": "^3.1.9",
     "express": "^4.18.3",
+    "express-session": "^1.18.0",
     "mysql": "^2.18.1",
     "nodemon": "^3.1.0",
     "tailwind": "^4.0.0"

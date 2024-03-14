@@ -1,0 +1,46 @@
+<!-- admin.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <h1>Admin Dashboard</h1>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Email</th>
+                <th>Nomor Handphone</th>
+                <th>Nomor Telepon</th>
+                <th>Provinsi</th>
+                <th>Kota/Kabupaten</th>
+                <th>Provinsi Aset</th>
+                <th>Kota/Kabupaten Aset</th>
+                <th>Tujuan Penilaian</th>
+                <th>Objek Penilaian</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% form_permintaan.forEach(item => { %>
+                <tr>
+                    <td><%= item.nama %></td>
+                    <td><%= item.email %></td>
+                    <td><%= item.no_hp %></td>
+                    <td><%= item.no_telp %></td>
+                    <td><%= item.provinsi_pelanggan %></td>
+                    <td><%= item.kota_pelanggan %></td>
+                    <td><%= item.provinsi_aset %></td>
+                    <td><%= item.kota_aset %></td>
+                    <td><%= item.tujuan_penilaian %></td>
+                    <td><%= item.objek_penilaian %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</body>
+</html>
