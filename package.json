@@ -1,0 +1,25 @@
+{
+  "name": "website-mbpru-bandung",
+  "version": "1.0.0",
+  "description": "untuk tempat pekael gwe, di MBPRU BANDUNG",
+  "main": "app.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erlangftsiesta/mbpru-dynamic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erlangftsiesta/mbpru-dynamic/issues"
+  },
+  "homepage": "https://github.com/erlangftsiesta/mbpru-dynamic#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.3",
+    "mysql": "^2.18.1",
+    "tailwind": "^4.0.0"
+  }
+}
