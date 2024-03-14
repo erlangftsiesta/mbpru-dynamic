@@ -1,8 +1,26 @@
 //Definisikan library dan modul yang akan dipakai
 const express = require('express');
+const mysql = require('mysql')
 const app = express();
 const path = require('path');
 const PORT = 3000;
+
+// Koneksi ke MySQL
+const connection = mysql.createConnection({
+    host: 'localhost',
+    user: '', // Ganti dengan username MySQL Anda
+    password: '', // Ganti dengan password MySQL Anda
+    database: 'kjpp_mbpru' // Ganti dengan nama database yang ingin Anda hubungkan
+});
+
+// Membuka koneksi ke database MySQL
+connection.connect((err) => {
+    if (err) {
+        console.error('Error koneksi ke database MySQL: ' + err.stack);
+        return;
+    }
+    console.log('Terhubung dengan ID koneksi MySQL: ' + connection.threadId);
+});
 
 //definisikan lokasi folder agar dibaca express
 app.use(express.static(path.join(__dirname, 'frontend')));
@@ -64,7 +82,17 @@ app.get('/page-not-found', function(req, res) {
 });
 
 app.get('/admin', function(req, res) {
-    res.render('admin')
+    res.render('admin');
+
+});
+
+app.post('/post-admin', (req, res) => {
+    const username = ['username'];
+    const password = ['password'];
+
+    if (username && password){
+        
+    }
 });
 
 app.post('/post-form', (req, res) => {
