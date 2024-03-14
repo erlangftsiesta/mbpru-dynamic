@@ -34,34 +34,50 @@ app.get('/service', function(req, res){
 });
 
 //Menampilkan halaman corporate values (corporate-service.ejs)
-app.get('/value', function(req, res){
+app.get('/value', function(req, res) {
 
     res.render('value');
 });
 
 //Menampilkan halaman portfolio (portfolio.ejs)
-app.get('/portfolio', function(req, res){
+app.get('/portfolio', function(req, res) {
 
     res.render('portfolio');
 });
 
 //Menampilkan halaman gallery (gallery.ejs)
-app.get('/gallery', function(req, res){
+app.get('/gallery', function(req, res) {
 
     res.render('gallery');
 });
 
 //Menampilkan halaman contact (contact.ejs)
-app.get('/contact', function(req, res){
+app.get('/contact', function(req, res) {
 
     res.render('contact');
 });
 
 //Menampilkan halaman error (missing.ejs)
-app.get('/page-not-found', function(req, res){
+app.get('/page-not-found', function(req, res) {
 
     res.render('missing');
 });
+
+app.get('/admin', function(req, res) {
+    res.render('admin')
+});
+
+app.post('/post-form', (req, res) => {
+    const form_nama = ['nama'];
+    const form_email = ['email'];
+    const form_nomorHandphone = ['handphone'];
+    const form_nomorTelepon = ['telepon'];
+    const form_provinsi = ['provinsi'];
+    const form_kotaKabupaten = ['kota-kabupaten'];
+    const form_tujuanPenilaian = ['tujuan-penilaian'];
+    const form_objekPenilaian = ['objek-penilaian'];
+
+})
 
 // Menjalankan server
 app.listen(PORT, () => {
