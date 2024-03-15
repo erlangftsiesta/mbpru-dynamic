@@ -1,23 +1,802 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id-ID">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulir</title>
-</head>
-<body>
-    <form action="/post-form" method="POST">
-        <input type="text" name="form_nama" placeholder="Nama"><br>
-        <input type="email" name="form_email" placeholder="Email"><br>
-        <input type="text" name="form_nomorHandphone" placeholder="Nomor Handphone"><br>
-        <input type="text" name="form_nomorTelepon" placeholder="Nomor Telepon"><br>
-        <input type="text" name="form_provinsi" placeholder="Provinsi"><br>
-        <input type="text" name="form_kotaKabupaten" placeholder="Kota/Kabupaten"><br>
-        <input type="text" name="form_provinsiAset" placeholder="Provinsi Aset"><br>
-        <input type="text" name="form_kotaKabupatenAset" placeholder="Kota/Kabupaten Aset"><br>
-        <input type="text" name="form_tujuanPenilaian" placeholder="Tujuan Penilaian"><br>
-        <input type="text" name="form_objekPenilaian" placeholder="Objek Penilaian"><br>
-        <button type="submit">Submit</button>
-    </form>
-</body>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Joo Template">
+    <link rel="icon" type="image/png" sizes="32x32" href="../public/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../public/images/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" href="../public/images/favicons/favicon.ico">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="../public/images/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../public/images/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../public/images/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../public/images/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../public/images/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../public/images/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../public/images/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../public/images/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../public/images/favicons/apple-touch-icon-180x180.png">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="../gtag/js?id=UA-162771321-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-162771321-3');
+    </script>
+
+        <title>Contact Us</title>
+    <meta name="csrf-param" content="_csrf-frontend">
+<meta name="csrf-token" content="AEFCs0yQ_n8hQo81WTJSueNllMAlOrlrjUiSp836grlwJzLGGsmqGksF30ELBxGPhASsg2RjyD2gIOTwup3m6w==">
+
+<link href="../public/assets/51348c53/css/bootstrap.css" rel="stylesheet">
+<link href="../public/assets/f883dbe8/css/select2.min.css" rel="stylesheet">
+<link href="../public/assets/51528358/css/select2-addl.min.css" rel="stylesheet">
+<link href="../public/assets/51528358/css/select2-krajee-bs4.min.css" rel="stylesheet">
+<link href="../public/assets/cf5f348d/css/kv-widgets.min.css" rel="stylesheet">
+<link href="../public/css/vendor.min.css?v=1557446391092" rel="stylesheet">
+<link href="../public/css/styles.css" rel="stylesheet">
+<link href="../public/css/custom.css?v=1557446391092" rel="stylesheet">
+<link href="../public/css-1?family=Poppins:300,400,500,600&amp;v=1557446305971" rel="stylesheet">
+<link href="../public/css/mystyle.css" rel="stylesheet">
+<script>window.s2options_e9bc2761 = {"themeCss":".select2-container--krajee-bs4","sizeCss":"","doReset":true,"doToggle":false,"doOrder":false};
+window.select2_b74c9186 = {"allowClear":true,"theme":"krajee-bs4","width":"auto","placeholder":"Provinsi Anda","language":"en"};
+
+window.select2_4a6e5935 = {"allowClear":true,"theme":"krajee-bs4","width":"auto","placeholder":"Kota\/Kabupaten Anda","language":"en"};
+
+window.select2_1f599bb6 = {"allowClear":true,"theme":"krajee-bs4","width":"auto","placeholder":"Provinsi Aset","language":"en"};
+
+window.select2_e27b5305 = {"allowClear":true,"theme":"krajee-bs4","width":"auto","placeholder":"Kota\/Kabupaten Aset","language":"en"};
+</script></head>
+<body class="active-pageloader corporate logistics header-sticky hide-on-scroll header-menu-with-icons header-transparent header-menu-border-bottom header-topbar topbar-background dark-color footer-widgets footer-background dark-color submenu-show-arrow-right menu-is-capitalized submenu-is-capitalized logo-text-is-capitalized page-index">
+
+<div class="pageloader is-active"></div>
+    <div id="site-wrap" class="site">
+      <div id="header-top-wrap" class="is-clearfix">
+        <div id="header-top" class="site-header-top">
+          <div id="header-top-inner" class="site-header-top-inner container">
+            <div class="level">
+              <div class="level-left">
+                <ul class="topbar-info ">
+                  <li>
+                      <span class="icon">
+                        <i class="icon-clock"></i>
+                      </span> Mon - Fri : 09:00 - 17:00
+                  </li>
+                  <li>
+                    <a href="../cdn-cgi/l/email-protection.html#4821262e27082b272538292631662b2725">
+                      <span class="icon">
+                        <i class="icon-envelope"></i>
+                      </span> <span class="__cf_email__" data-cfemail="e9848b999b9ca982839999c4848b999b9cc78a8684">[email&#160;protected]</span> </a>
+                  </li>
+                  <li>
+                    <a href="tel:+66396847263">
+                      <span class="icon">
+                        <i class="icon-phone"></i>
+                      </span> +62 21 7918 4336 
+                      <!-- <span class="icon">
+                        <i class="icon-fax"></i>
+                      </span> +62 21 7918 4336  -->
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- .level-left -->
+              <!-- <div class="level-right">
+                <ul class="header-menu-icons social">
+                  <li>
+                    <a href="#" target="_blank">
+                      <span class="icon">
+                        <i class="fab fa-facebook-f"></i>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank">
+                      <span class="icon">
+                        <i class="fab fa-twitter"></i>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank">
+                      <span class="icon">
+                        <i class="fab fa-linkedin-in"></i>
+                      </span>
+                    </a>
+                  </li>
+                </ul> -->
+                <!-- .header-menu-icons -->
+                <!-- <ul class="nav-menu-dropdown style-2 global-style on-click">
+                  <li>
+                    <a href="javascript:void(0);">
+                      <span class="icon">
+                        <i class="icon-globe"></i>
+                      </span>global</a>
+                    <ul>
+                      <li>
+                        <a href="javascript:void(0);">Africa</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">europe</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">America</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul> -->
+                <!-- .header-menu-icons -->
+                <!-- <ul class="nav-menu-dropdown style-2 on-click">
+                  <li>
+                    <a href="javascript:void(0);">
+                      <span class="flag-icon flag-icon-gb"></span>En</a>
+                    <ul>
+                      <li>
+                        <a href="javascript:void(0);">
+                          <span class="flag-icon flag-icon-es"></span>Es</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">
+                          <span class="flag-icon flag-icon-tr"></span>tr</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">
+                          <span class="flag-icon flag-icon-eg"></span>ع</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul> -->
+                <!-- .header-menu-icons -->
+              </div>
+              <!-- .level-right -->
+            </div>
+            <!-- .level -->
+          </div>
+          <!-- #header-top-inner -->
+        </div>
+        <!-- #header-top -->
+      </div>
+      <!-- #header-top-wrap -->
+      <div id="header-wrap" class="is-clearfix">
+        <header id="header" class="site-header">
+          <div id="header-inner" class="site-header-inner container">
+            <div class="level">
+              <div class="level-left">
+                <div id="header-logo" class="site-logo ">
+                  <div id="logo-inner" class="site-logo-inner">
+                    <a href="/">
+                      <img alt="MBPRU" src="../images/logo/logo_mbpru.png">
+                      
+                    </a>
+                  </div>
+                  <!-- #logo-inner -->
+                </div>
+                <!-- #header-logo -->
+              </div>
+              <!-- .level-left -->
+              <div class="level-right">
+                <div class="nav-wrap">
+                  <nav class="main-navigation right">
+                  <ul id="sidebarnav"><li class="mega-menu niche-templates active"><a href="../index.htm" class="sidebar-link waves-effect waves-dark">Home</a></li>
+<li><a href="/profile/" class="sidebar-link waves-effect waves-dark">Profile</a></li>
+<li><a href="/service/" class="sidebar-link waves-effect waves-dark">Product & Service</a></li>
+<li><a href="/value/" class="sidebar-link waves-effect waves-dark">Corporate Value</a></li>
+<li><a href="/experience/" class="sidebar-link waves-effect waves-dark">Portofolio</a></li>
+<li><a href="/gallery/" class="sidebar-link waves-effect waves-dark">Gallery</a></li>
+<li class="selected"><a href="/contact" class="sidebar-link waves-effect waves-dark">Contact</a></li></ul>                  </nav>
+                  <!-- #site-navigation -->
+                </div>
+                <!-- #nav-wrap -->
+                <!-- .header-menu-icons -->
+                <!-- <a href="/admin" class="button is-white active">LOGIN</a>
+                <div class="modal search-form-overlay">
+                  <div class="modal-background"></div>
+                  <div class="modal-content">
+                    <form class="widget-form">
+                      <div class="field">
+                        <div class="control is-expanded">
+                          <input class="input" type="text" placeholder="Search...">
+                          <button type="submit" class="button">
+                            <span class="icon">
+                              <i class="icon-magnifier"></i>
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <button class="modal-close is-large" aria-label="close"></button>
+                </div> -->
+                <!-- .modal.search-form-overlay -->
+              </div>
+              <!-- .level-right -->
+            </div>
+            <!-- .level -->
+          </div>
+          <!-- #header-inner -->
+        </header>
+        <!-- #header -->
+      </div>
+      <!-- #header-wrap -->
+     
+      <!-- #header-bottom-wrap -->
+      <!-- import content layouts and modules -->
+      <div id="header-bottom-wrap" class="is-clearfix">
+    <div id="header-bottom" class="site-header-bottom">
+        <div id="header-bottom-inner" class="site-header-bottom-inner ">
+            <section class="hero page-title is-medium has-text-centered contact">
+            <div class="hero-body">
+                <div class="container">
+                <h1>Contact Us</h1>
+                <h3>Break Through Self Doubt And Fear</h3>
+                </div>
+                <!-- .hero-body -->
+            </div>
+            <!-- .container -->
+            </section>
+            <!-- .page-title -->
+        </div>
+        <!-- #header-bottom-inner -->
+    </div>
+    <!-- #header-bottom -->
+</div>
+<div id="content-main-wrap" class="is-clearfix">
+    <div id="content-area" class="site-content-area">
+        <div id="content-area-inner" class="site-content-area-inner">
+            <!-- contact-form section -->
+            <section class="section contact-form is-clearfix">
+            <div class="container">
+                <p class="heading-title-top has-text-centered">contact us</p>
+                <h1 class="heading-title style-3">How we can help</h1>
+                <div class="has-text-centered">
+                    <div class="global-social-links style-1">
+                        <ul>
+                        <li>
+                            <a href="#">
+                            <span class="icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <span class="icon">
+                                <i class="fab fa-twitter"></i>
+                            </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <span class="icon">
+                                <i class="fab fa-instagram"></i>
+                            </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <span class="icon">
+                                <i class="fab fa-pinterest-p"></i>
+                            </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <span class="icon">
+                                <i class="fab fa-google"></i>
+                            </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <span class="icon">
+                                <i class="fab fa-dribbble"></i>
+                            </span>
+                            </a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="columns is-multiline is-variable is-8">
+                    <div class="column is-4">
+                        <div class="columns is-variable is-4 is-multiline boxes-style-3">
+                        <div class="column is-12" data-aos="fade">
+                            <div class="box-item media">
+                            <div class="media-left">
+                                <a href="../pages/contact.html">
+                                <span class="icon">
+                                    <i class="ion-ios-pin-outline"></i>
+                                </span>
+                                </a>
+                            </div>
+                            <div class="media-content">
+                                <h3>
+                                <a href="../pages/contact.html">Address</a>
+                                </h3>
+                                <p>Kindo Office Square A5, Jalan Duren Tiga Raya No. 101, Jakarta Selatan 12760
+                            </p></div>
+                            </div>
+                            <!-- .box-item -->
+                        </div>
+                        <div class="column is-12" data-aos="fade">
+                            <div class="box-item media">
+                            <div class="media-left">
+                                <a href="../pages/contact.html">
+                                <span class="icon">
+                                    <i class="ion-ios-call-outline"></i>
+                                </span>
+                                </a>
+                            </div>
+                            <div class="media-content">
+                                <h3>
+                                <a href="../pages/contact.html">Phone</a>
+                                </h3>
+                                <p>+62 21 7918 4336
+                            </p></div>
+                            </div>
+                            <!-- .box-item -->
+                        </div>
+                        <div class="column is-12" data-aos="fade">
+                            <div class="box-item media">
+                            <div class="media-left">
+                                <a href="../pages/contact.html">
+                                <span class="icon">
+                                    <i class="ion-ios-mail-outline"></i>
+                                </span>
+                                </a>
+                            </div>
+                            <div class="media-content">
+                                <h3>
+                                <a href="../pages/contact.html">Email</a>
+                                </h3>
+                                <p><a href="../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="2f5f5a5c4e5b6f424d5f5d5a014c4042">[email&#160;protected]</a>
+                                <br> <a href="../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="6b06091b191e595b5b522b0c060a020745080406">[email&#160;protected]</a></p>
+                            </div>
+                            </div>
+                            <!-- .box-item -->
+                        </div>
+                        </div>
+                        <!-- .columns -->
+                    </div>
+                    <div class="column is-8">
+                    <form id="contact-form" action="/contact/index" method="post">
+<input type="hidden" name="_csrf-frontend" value="AEFCs0yQ_n8hQo81WTJSueNllMAlOrlrjUiSp836grlwJzLGGsmqGksF30ELBxGPhASsg2RjyD2gIOTwup3m6w==">                        <div class="field is-horizontal">
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control is-expanded">
+                                        <div class="form-group field-permintaanpelanggan-nama required">
+
+<input type="text" id="permintaanpelanggan-nama" class="form-control" name="PermintaanPelanggan[nama]" placeholder="Nama" aria-required="true">
+
+<p class="help-block help-block-error"></p>
+</div>                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="control is-expanded">
+                                        <div class="form-group field-permintaanpelanggan-email required">
+
+<input type="text" id="permintaanpelanggan-email" class="form-control" name="PermintaanPelanggan[email]" placeholder="Email" aria-required="true">
+
+<p class="help-block help-block-error"></p>
+</div>                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field is-horizontal">
+                            <div class="field-body">
+                                <div class="field">
+                                <div class="control is-expanded">
+                                    <div class="form-group field-permintaanpelanggan-no_handphone">
+
+<input type="text" id="permintaanpelanggan-no_handphone" class="form-control" name="PermintaanPelanggan[no_handphone]" placeholder="No Handphone">
+
+<p class="help-block help-block-error"></p>
+</div>                                </div>
+                                </div>
+                                <div class="field">
+                                <div class="control is-expanded">
+                                    <div class="form-group field-permintaanpelanggan-no_telepon">
+
+<input type="text" id="permintaanpelanggan-no_telepon" class="form-control" name="PermintaanPelanggan[no_telepon]" placeholder="No Telepon">
+
+<p class="help-block help-block-error"></p>
+</div>                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field is-horizontal">
+                            <div class="field-body">
+                                <div class="field">
+                                <div class="control is-expanded">
+                                    <div class="form-group field-id_prov required">
+
+<div class="kv-plugin-loading loading-id_prov">&nbsp;</div><select id="id_prov" class="form-control load_ajax_change" name="PermintaanPelanggan[provinsi_anda]" data-ajaxload="/ajax-load/get-kabupaten-anda" data-ajaxdata="#id_prov" data-ajaxtarget="#id_kab" aria-required="true" data-s2-options="s2options_e9bc2761" data-krajee-select2="select2_b74c9186" style="width: 1px; height: 1px; visibility: hidden;">
+<option value="">Provinsi Anda</option>
+<option value="11">ACEH</option>
+<option value="12">SUMATERA UTARA</option>
+<option value="13">SUMATERA BARAT</option>
+<option value="14">RIAU</option>
+<option value="15">JAMBI</option>
+<option value="16">SUMATERA SELATAN</option>
+<option value="17">BENGKULU</option>
+<option value="18">LAMPUNG</option>
+<option value="19">KEPULAUAN BANGKA BELITUNG</option>
+<option value="20">KEPULAUAN RIAU</option>
+<option value="31">JAKARTA</option>
+<option value="32">JAWA BARAT</option>
+<option value="33">JAWA TENGAH</option>
+<option value="34">D I YOGYAKARTA</option>
+<option value="35">JAWA TIMUR</option>
+<option value="36">BANTEN</option>
+<option value="51">BALI</option>
+<option value="52">NUSA TENGGARA BARAT</option>
+<option value="53">NUSA TENGGARA TIMUR</option>
+<option value="61">KALIMANTAN BARAT</option>
+<option value="62">KALIMANTAN TENGAH</option>
+<option value="63">KALIMANTAN SELATAN</option>
+<option value="64">KALIMANTAN TIMUR</option>
+<option value="65">KALIMANTAN UTARA</option>
+<option value="71">SULAWESI UTARA</option>
+<option value="72">SULAWESI TENGAH</option>
+<option value="73">SULAWESI SELATAN</option>
+<option value="74">SULAWESI TENGGARA</option>
+<option value="75">GORONTALO</option>
+<option value="76">SULAWESI BARAT</option>
+<option value="81">MALUKU</option>
+<option value="82">PAPUA</option>
+<option value="83">MALUKU UTARA</option>
+<option value="84">PAPUA BARAT</option>
+</select>
+
+<p class="help-block help-block-error"></p>
+</div>                                </div>
+                                </div>
+                                <div class="field">
+                                <div class="control is-expanded">
+                                    <div class="form-group field-id_kab required">
+
+<div class="kv-plugin-loading loading-id_kab">&nbsp;</div><select id="id_kab" class="form-control load_ajax_change" name="PermintaanPelanggan[kota_anda]" data-ajaxdata="#id_prov|#id_kab" aria-required="true" data-s2-options="s2options_e9bc2761" data-krajee-select2="select2_4a6e5935" style="width: 1px; height: 1px; visibility: hidden;">
+<option value="">Kota/Kabupaten Anda</option>
+<option value="1">KABUPATEN KARIMUN</option>
+<option value="2">KABUPATEN BINTAN</option>
+<option value="3">KABUPATEN NATUNA</option>
+<option value="4">KABUPATEN LINGGA</option>
+<option value="5">KABUPATEN KEPULAUAN ANAMBAS</option>
+<option value="6">KOTA B A T A M</option>
+<option value="7">KOTA TANJUNG PINANG</option>
+<option value="8">KABUPATEN KEPULAUAN YAPEN</option>
+<option value="9">KABUPATEN BIAK NUMFOR</option>
+<option value="10">KABUPATEN PANIAI</option>
+<option value="11">KABUPATEN PUNCAK JAYA</option>
+<option value="12">KABUPATEN MIMIKA</option>
+<option value="13">KABUPATEN BOVEN DIGOEL</option>
+<option value="14">KABUPATEN MAPPI</option>
+<option value="15">KABUPATEN ASMAT</option>
+<option value="16">KABUPATEN YAHUKIMO</option>
+<option value="17">KABUPATEN PEGUNUNGAN BINTANG</option>
+<option value="18">KABUPATEN TOLIKARA</option>
+<option value="71">KOTA JAYAPURA</option>
+<option value="72">KOTA TIDORE KEPULAUAN</option>
+<option value="73">KOTA PALOPO</option>
+<option value="74">KOTA KOTAMOBAGU</option>
+<option value="75">KOTA PASURUAN</option>
+<option value="19">KABUPATEN SARMI</option>
+<option value="20">KABUPATEN KEEROM</option>
+<option value="21">KABUPATEN MALAKA</option>
+<option value="22">KABUPATEN LUWU UTARA</option>
+<option value="23">KABUPATEN TUBAN</option>
+<option value="24">KABUPATEN LAMONGAN</option>
+<option value="25">KABUPATEN LUWU TIMUR</option>
+<option value="76">KOTA MOJOKERTO</option>
+<option value="77">KOTA MADIUN</option>
+<option value="78">KOTA SURABAYA</option>
+<option value="79">KOTA BATU</option>
+<option value="26">KABUPATEN WAROPEN</option>
+<option value="27">KABUPATEN SUPIORI</option>
+<option value="28">KABUPATEN MAMBERAMO RAYA</option>
+<option value="29">KABUPATEN NDUGA</option>
+<option value="30">KABUPATEN LANNY JAYA</option>
+<option value="31">KABUPATEN MAMBERAMO TENGAH</option>
+<option value="32">KABUPATEN YALIMO</option>
+<option value="33">KABUPATEN PUNCAK</option>
+<option value="34">KABUPATEN DOGIYAI</option>
+<option value="35">KABUPATEN INTAN JAYA</option>
+<option value="36">KABUPATEN DEIYAI</option>
+</select>
+
+<p class="help-block help-block-error"></p>
+</div>                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field is-horizontal">
+                            <div class="field-body">
+                                <div class="field">
+                                <div class="control is-expanded">
+                                    <div class="form-group field-id_prov2 required">
+
+<div class="kv-plugin-loading loading-id_prov2">&nbsp;</div><select id="id_prov2" class="form-control load_ajax_change" name="PermintaanPelanggan[provinsi_aset]" data-ajaxload="/ajax-load/get-kabupaten-aset" data-ajaxdata="#id_prov2" data-ajaxtarget="#id_kab2" aria-required="true" data-s2-options="s2options_e9bc2761" data-krajee-select2="select2_1f599bb6" style="width: 1px; height: 1px; visibility: hidden;">
+<option value="">Provinsi Aset</option>
+<option value="11">ACEH</option>
+<option value="12">SUMATERA UTARA</option>
+<option value="13">SUMATERA BARAT</option>
+<option value="14">RIAU</option>
+<option value="15">JAMBI</option>
+<option value="16">SUMATERA SELATAN</option>
+<option value="17">BENGKULU</option>
+<option value="18">LAMPUNG</option>
+<option value="19">KEPULAUAN BANGKA BELITUNG</option>
+<option value="20">KEPULAUAN RIAU</option>
+<option value="31">JAKARTA</option>
+<option value="32">JAWA BARAT</option>
+<option value="33">JAWA TENGAH</option>
+<option value="34">D I YOGYAKARTA</option>
+<option value="35">JAWA TIMUR</option>
+<option value="36">BANTEN</option>
+<option value="51">BALI</option>
+<option value="52">NUSA TENGGARA BARAT</option>
+<option value="53">NUSA TENGGARA TIMUR</option>
+<option value="61">KALIMANTAN BARAT</option>
+<option value="62">KALIMANTAN TENGAH</option>
+<option value="63">KALIMANTAN SELATAN</option>
+<option value="64">KALIMANTAN TIMUR</option>
+<option value="65">KALIMANTAN UTARA</option>
+<option value="71">SULAWESI UTARA</option>
+<option value="72">SULAWESI TENGAH</option>
+<option value="73">SULAWESI SELATAN</option>
+<option value="74">SULAWESI TENGGARA</option>
+<option value="75">GORONTALO</option>
+<option value="76">SULAWESI BARAT</option>
+<option value="81">MALUKU</option>
+<option value="82">PAPUA</option>
+<option value="83">MALUKU UTARA</option>
+<option value="84">PAPUA BARAT</option>
+</select>
+
+<p class="help-block help-block-error"></p>
+</div>                                </div>
+                                </div>
+                                <div class="field">
+                                <div class="control is-expanded">
+                                    <div class="form-group field-id_kab2 required">
+
+<div class="kv-plugin-loading loading-id_kab2">&nbsp;</div><select id="id_kab2" class="form-control load_ajax_change" name="PermintaanPelanggan[kota_aset]" data-ajaxdata="#id_prov2|#id_kab2" aria-required="true" data-s2-options="s2options_e9bc2761" data-krajee-select2="select2_e27b5305" style="width: 1px; height: 1px; visibility: hidden;">
+<option value="">Kota/Kabupaten Aset</option>
+<option value="1">KABUPATEN KARIMUN</option>
+<option value="2">KABUPATEN BINTAN</option>
+<option value="3">KABUPATEN NATUNA</option>
+<option value="4">KABUPATEN LINGGA</option>
+<option value="5">KABUPATEN KEPULAUAN ANAMBAS</option>
+<option value="6">KOTA B A T A M</option>
+<option value="7">KOTA TANJUNG PINANG</option>
+<option value="8">KABUPATEN KEPULAUAN YAPEN</option>
+<option value="9">KABUPATEN BIAK NUMFOR</option>
+<option value="10">KABUPATEN PANIAI</option>
+<option value="11">KABUPATEN PUNCAK JAYA</option>
+<option value="12">KABUPATEN MIMIKA</option>
+<option value="13">KABUPATEN BOVEN DIGOEL</option>
+<option value="14">KABUPATEN MAPPI</option>
+<option value="15">KABUPATEN ASMAT</option>
+<option value="16">KABUPATEN YAHUKIMO</option>
+<option value="17">KABUPATEN PEGUNUNGAN BINTANG</option>
+<option value="18">KABUPATEN TOLIKARA</option>
+<option value="71">KOTA JAYAPURA</option>
+<option value="72">KOTA TIDORE KEPULAUAN</option>
+<option value="73">KOTA PALOPO</option>
+<option value="74">KOTA KOTAMOBAGU</option>
+<option value="75">KOTA PASURUAN</option>
+<option value="19">KABUPATEN SARMI</option>
+<option value="20">KABUPATEN KEEROM</option>
+<option value="21">KABUPATEN MALAKA</option>
+<option value="22">KABUPATEN LUWU UTARA</option>
+<option value="23">KABUPATEN TUBAN</option>
+<option value="24">KABUPATEN LAMONGAN</option>
+<option value="25">KABUPATEN LUWU TIMUR</option>
+<option value="76">KOTA MOJOKERTO</option>
+<option value="77">KOTA MADIUN</option>
+<option value="78">KOTA SURABAYA</option>
+<option value="79">KOTA BATU</option>
+<option value="26">KABUPATEN WAROPEN</option>
+<option value="27">KABUPATEN SUPIORI</option>
+<option value="28">KABUPATEN MAMBERAMO RAYA</option>
+<option value="29">KABUPATEN NDUGA</option>
+<option value="30">KABUPATEN LANNY JAYA</option>
+<option value="31">KABUPATEN MAMBERAMO TENGAH</option>
+<option value="32">KABUPATEN YALIMO</option>
+<option value="33">KABUPATEN PUNCAK</option>
+<option value="34">KABUPATEN DOGIYAI</option>
+<option value="35">KABUPATEN INTAN JAYA</option>
+<option value="36">KABUPATEN DEIYAI</option>
+</select>
+
+<p class="help-block help-block-error"></p>
+</div>                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field ">
+                            <div class="control is-expanded">
+                            <div class="form-group field-permintaanpelanggan-tujuan_penilaian">
+
+<input type="text" id="permintaanpelanggan-tujuan_penilaian" class="form-control" name="PermintaanPelanggan[tujuan_penilaian]" placeholder="Tujuan Penilaian">
+
+<p class="help-block help-block-error"></p>
+</div>                            </div>
+                        </div>
+                        <div class="field ">
+                            <div class="control is-expanded">
+                            <div class="form-group field-permintaanpelanggan-objek_yang_dinilai">
+
+<input type="text" id="permintaanpelanggan-objek_yang_dinilai" class="form-control" name="PermintaanPelanggan[objek_yang_dinilai]" placeholder="Objek Yang Dinilai">
+
+<p class="help-block help-block-error"></p>
+</div>                            </div>
+                        </div>
+                        <div class="control has-text-centered">
+                            <button type="submit" class="btn btn-primary">Send Message</button>                        </div>
+                    </form>                    </div>
+                </div>
+                <br> 
+            </div>
+            </section>
+        </div>
+    </div>
+</div>
+      <!-- #content-main-wrap -->
+      <div id="footer-top-wrap" class="is-clearfix">
+        <div id="footer-top" class="site-footer-top">
+          <div id="footer-top-inner" class="site-footer-top-inner ">
+            <section class="hero clients-section is-clearfix">
+              <div class="container">
+                <div class="columns is-variable is-4 is-multiline">
+                  <div class="column is-2-desktop is-12-tablet">
+                    <h1 class="heading-title style-3 has-text-left">our partners</h1>
+                  </div>
+                  <div class="column is-10-desktop is-12-tablet">
+                    <nav class="clients-list level  owl-carousel no-dots carousel-items-5">
+                      <div class="client-item has-text-centered level-item">
+                        <a href="#" target="_blank">
+                          <img alt="Joo - Niche Multi-Purpose HTML Template" src="../images/clients/7.png"> </a>
+                      </div>
+                      <div class="client-item has-text-centered level-item">
+                        <a href="#" target="_blank">
+                          <img alt="Joo - Niche Multi-Purpose HTML Template" src="../images/clients/8.png"> </a>
+                      </div>
+                      <div class="client-item has-text-centered level-item">
+                        <a href="#" target="_blank">
+                          <img alt="Joo - Niche Multi-Purpose HTML Template" src="../images/clients/9.png"> </a>
+                      </div>
+                      <div class="client-item has-text-centered level-item">
+                        <a href="#" target="_blank">
+                          <img alt="Joo - Niche Multi-Purpose HTML Template" src="../images/clients/7.png"> </a>
+                      </div>
+                      <div class="client-item has-text-centered level-item">
+                        <a href="#" target="_blank">
+                          <img alt="Joo - Niche Multi-Purpose HTML Template" src="../images/clients/8.png"> </a>
+                      </div>
+                      <div class="client-item has-text-centered level-item">
+                        <a href="#" target="_blank">
+                          <img alt="Joo - Niche Multi-Purpose HTML Template" src="../images/clients/9.png"> </a>
+                      </div>
+                      <div class="client-item has-text-centered level-item">
+                        <a href="#" target="_blank">
+                          <img alt="Joo - Niche Multi-Purpose HTML Template" src="../images/clients/7.png"> </a>
+                      </div>
+                      <div class="client-item has-text-centered level-item">
+                        <a href="#" target="_blank">
+                          <img alt="Joo - Niche Multi-Purpose HTML Template" src="../images/clients/8.png"> </a>
+                      </div>
+                      <div class="client-item has-text-centered level-item">
+                        <a href="#" target="_blank">
+                          <img alt="Joo - Niche Multi-Purpose HTML Template" src="../images/clients/9.png"> </a>
+                      </div>
+                      <div class="client-item has-text-centered level-item">
+                        <a href="#" target="_blank">
+                          <img alt="Joo - Niche Multi-Purpose HTML Template" src="../images/clients/7.png"> </a>
+                      </div>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- #footer-top-inner -->
+        </div>
+        <!-- #footer-top -->
+      </div>
+      <!-- #footer-top-wrap -->
+      <div id="footer-wrap" class="is-clearfix">
+        <!-- #footer -->
+      </div>
+      <!-- #footer-wrap -->
+      <div id="footer-bottom-wrap" class="is-clearfix">
+        <div id="footer-bottom" class="site-footer-bottom">
+          <div id="footer-bottom-inner" class="site-footer-bottom-inner ">
+            <section class="section footer-bottom-content">
+              <div class="container">
+                <h2 class="display-none">footer</h2>
+                <div class="level">
+                  <div class="level-left">
+                    <span class="footer-copyright">
+                      <a href='../index.htm'></a> © 
+                      <span class='current-year'></span> MBPRU. All Rights Reserved. </span>
+                  </div>
+                  <!-- .level-left -->
+                  <div class="level-right">
+                    <div class="nav-wrap">
+                      <nav class="main-navigation right">
+                        <ul class="menu">
+                          <li>
+                          <a href="../profile/index.html">profile</a>                          </li>
+                          <li>
+                          <a href="../service/index.html">services</a>                          </li>
+                          <li>
+                          <a href="../profile/index.html">product & service</a>                          </li>
+                          <li>
+                          <a href="../value/index.html">corporate value</a>                          </li>
+                          <li>
+                          <a href="../experience/index.html">portfolio</a>                          </li>
+                            <li>
+                          <a href="index.html">contact</a>                          </li>
+                        </ul>
+                      </nav>
+                      <!-- #site-navigation -->
+                    </div>
+                    <!-- #nav-wrap -->
+                  </div>
+                  <!-- .level-right -->
+                </div>
+                <!-- .level -->
+              </div>
+            </section>
+            <!-- .footer-bottom-content -->
+          </div>
+          <!-- #footer-bottom-inner -->
+        </div>
+        <!-- #footer-bottom -->
+      </div>
+      <!-- #footer-bottom-wrap -->
+      <!-- show floating buttons -->
+     
+    <!-- #site-wrap -->
+
+<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../js/vendor.min.js?v=1557446391092"></script>
+<script src="../public/js/load_ajax_change.js"></script>
+<script src="../public/assets/5f89d4ad/yii.js"></script>
+<script src="../public/assets/5f89d4ad/yii.validation.js"></script>
+<script src="../public/assets/f883dbe8/js/select2.full.min.js"></script>
+<script src="../public/assets/51528358/js/select2-krajee.min.js"></script>
+<script src="../public/assets/cf5f348d/js/kv-widgets.min.js"></script>
+<script src="../public/assets/5f89d4ad/yii.activeForm.js"></script>
+<script src="../public/js/scripts.min.js?v=1557446391092"></script>
+<script src="../public/js/custom.js?v=1557446391092"></script>
+<script src="../public/js/bootstrap/bootstrap.min.js"></script>
+<script src="../public/js/myscript.js"></script>
+<script>jQuery(function ($) {
+jQuery&&jQuery.pjax&&(jQuery.pjax.defaults.maxCacheLength=0);
+if (jQuery('#id_prov').data('select2')) { jQuery('#id_prov').select2('destroy'); }
+jQuery.when(jQuery('#id_prov').select2(select2_b74c9186)).done(initS2Loading('id_prov','s2options_e9bc2761'));
+
+if (jQuery('#id_kab').data('select2')) { jQuery('#id_kab').select2('destroy'); }
+jQuery.when(jQuery('#id_kab').select2(select2_4a6e5935)).done(initS2Loading('id_kab','s2options_e9bc2761'));
+
+if (jQuery('#id_prov2').data('select2')) { jQuery('#id_prov2').select2('destroy'); }
+jQuery.when(jQuery('#id_prov2').select2(select2_1f599bb6)).done(initS2Loading('id_prov2','s2options_e9bc2761'));
+
+if (jQuery('#id_kab2').data('select2')) { jQuery('#id_kab2').select2('destroy'); }
+jQuery.when(jQuery('#id_kab2').select2(select2_e27b5305)).done(initS2Loading('id_kab2','s2options_e9bc2761'));
+
+jQuery('#contact-form').yiiActiveForm([{"id":"permintaanpelanggan-nama","name":"nama","container":".field-permintaanpelanggan-nama","input":"#permintaanpelanggan-nama","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Nama harus berupa string.","max":255,"tooLong":"Nama harus memiliki paling banyak 255 karakter.","skipOnEmpty":1});yii.validation.required(value, messages, {"message":"Nama tidak boleh kosong."});}},{"id":"permintaanpelanggan-email","name":"email","container":".field-permintaanpelanggan-email","input":"#permintaanpelanggan-email","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.email(value, messages, {"pattern":/^[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$/,"fullPattern":/^[^@]*<[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?>$/,"allowName":false,"message":"Email bukan alamat email yang valid.","enableIDN":false,"skipOnEmpty":1});yii.validation.required(value, messages, {"message":"Email tidak boleh kosong."});}},{"id":"permintaanpelanggan-no_handphone","name":"no_handphone","container":".field-permintaanpelanggan-no_handphone","input":"#permintaanpelanggan-no_handphone","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"No Handphone harus berupa string.","max":20,"tooLong":"No Handphone harus memiliki paling banyak 20 karakter.","skipOnEmpty":1});}},{"id":"permintaanpelanggan-no_telepon","name":"no_telepon","container":".field-permintaanpelanggan-no_telepon","input":"#permintaanpelanggan-no_telepon","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"No Telepon harus berupa string.","max":20,"tooLong":"No Telepon harus memiliki paling banyak 20 karakter.","skipOnEmpty":1});}},{"id":"id_prov","name":"provinsi_anda","container":".field-id_prov","input":"#id_prov","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.number(value, messages, {"pattern":/^[+-]?\d+$/,"message":"Provinsi Anda harus berupa integer.","skipOnEmpty":1});yii.validation.required(value, messages, {"message":"Provinsi Anda tidak boleh kosong."});}},{"id":"id_kab","name":"kota_anda","container":".field-id_kab","input":"#id_kab","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.number(value, messages, {"pattern":/^[+-]?\d+$/,"message":"Kota Anda harus berupa integer.","skipOnEmpty":1});yii.validation.required(value, messages, {"message":"Kota Anda tidak boleh kosong."});}},{"id":"id_prov2","name":"provinsi_aset","container":".field-id_prov2","input":"#id_prov2","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.number(value, messages, {"pattern":/^[+-]?\d+$/,"message":"Provinsi Aset harus berupa integer.","skipOnEmpty":1});yii.validation.required(value, messages, {"message":"Provinsi Aset tidak boleh kosong."});}},{"id":"id_kab2","name":"kota_aset","container":".field-id_kab2","input":"#id_kab2","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.number(value, messages, {"pattern":/^[+-]?\d+$/,"message":"Kota Aset harus berupa integer.","skipOnEmpty":1});yii.validation.required(value, messages, {"message":"Kota Aset tidak boleh kosong."});}},{"id":"permintaanpelanggan-tujuan_penilaian","name":"tujuan_penilaian","container":".field-permintaanpelanggan-tujuan_penilaian","input":"#permintaanpelanggan-tujuan_penilaian","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Tujuan Penilaian harus berupa string.","skipOnEmpty":1});}},{"id":"permintaanpelanggan-objek_yang_dinilai","name":"objek_yang_dinilai","container":".field-permintaanpelanggan-objek_yang_dinilai","input":"#permintaanpelanggan-objek_yang_dinilai","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Objek Yang Dinilai harus berupa string.","max":255,"tooLong":"Objek Yang Dinilai harus memiliki paling banyak 255 karakter.","skipOnEmpty":1});}}], []);
+});</script></body>
 </html>

@@ -59,9 +59,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 //definisikan lokasi folder agar dibaca express
 app.use(express.static(path.join(__dirname, 'frontend')));
+app.use(express.static(path.join(__dirname, 'frontend/public')));
+
+//sesuaikan lokasi folder render agar dibaca express
 app.set('views', [
     path.join(__dirname, 'frontend/views'),
-    path.join(__dirname, 'frontend/views/admin')
+    path.join(__dirname, 'frontend/views/admin'),
 ]);
 
 // Mengatur EJS sebagai view engine
