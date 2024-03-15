@@ -3,4 +3,3 @@ $(document).ready(function(){
     $('#sidebarnav li').removeAttr('class');
     $("a[href$='"+url+"']").parent().addClass('mega-menu niche-templates active');
 });
-
