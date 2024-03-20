@@ -8315,7 +8315,7 @@ body.blog-list-style-3 .blog-list.style-3 .blog-post .entry-header .post-meta ul
 }
 
 .owl-carousel .owl-prev,
-.owl-carousel .owl-next {
+.owl-carousel .owl-next {   
     top: 50%;
     position: absolute;
     -webkit-transition: all 0.5s ease;
@@ -8460,7 +8460,7 @@ body.blog-list-style-3 .blog-list.style-3 .blog-post .entry-header .post-meta ul
 .owl-carousel .owl-dots .owl-dot {
     display: inline-block;
     zoom: 1;
-    *display: inline;
+    display: inline;
 }
 
 .owl-carousel .owl-dots .owl-dot span {
@@ -15387,7 +15387,7 @@ body.header-transparent:not(.responsive-layout):not(.header-hamburger-menu).head
 
 .page-title .hero-body h3,
 .page-title .hero-body .subtitle {
-    letter-spacing: .5px;s
+    letter-spacing: .5px;
     margin-top: -3px !important;
     color: #4b505d;
     font-size: 15px;
