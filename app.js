@@ -22,7 +22,7 @@ connection.connect((err) => {
         console.error('Error koneksi ke database MySQL: ' + err.stack);
         return;
     }
-    console.log('Konek Jink');
+    console.log('\nKonek Cuy');
 });
 
 //Middleware untuk Menangani Sesi User
@@ -190,7 +190,13 @@ app.post('/post-form', (req, res) => {
 });
 
 
+const os = require('os');
+
 // Menjalankan server
 app.listen(PORT, () => {
-    console.log(`Server berjalan pada port ${PORT}`);
+    const cpuInfo = os.cpus();
+    const totalMemory = os.totalmem();
+    const freeMemory = os.freemem();
+    console.log(`Checking System Information... \nCPU: ${cpuInfo[0].model} \nRAM Kosong: ${freeMemory / 1024 / 1024 / 1024} GB \nConnecting.... \nServer berjalan pada port ${PORT}`);
 });
+
