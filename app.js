@@ -190,13 +190,16 @@ app.post('/post-form', (req, res) => {
 });
 
 
+// minta ultilitas/ultility ke Operating System
 const os = require('os');
+
 
 // Menjalankan server
 app.listen(PORT, () => {
     const cpuInfo = os.cpus();
     const totalMemory = os.totalmem();
     const freeMemory = os.freemem();
-    console.log(`Checking System Information... \nCPU: ${cpuInfo[0].model} \nRAM Kosong: ${freeMemory / 1024 / 1024 / 1024} GB \nConnecting.... \nServer berjalan pada port ${PORT}`);
+    const osInfo = os.platform();
+    console.log(`Checking System Information... \nCPU: ${cpuInfo[0].model} \nRAM Tersedia: ${freeMemory / 1024 / 1024 / 1024} GB \nOperating System: ${osInfo} \nNode.JS sedang berjalan... \nTerhubung, Server berjalan pada port ${PORT}`);
 });
 
