@@ -190,7 +190,7 @@ app.post('/post-form', (req, res) => {
 });
 
 
-// minta ultilitas/ultility ke Operating System
+// minta ultilitas/ultility ke Operating System (Just Gimmick)
 const os = require('os');
 
 
