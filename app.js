@@ -131,6 +131,12 @@ app.get('/admin', checkLogin, function(req, res) {
     });
 });
 
+//developer
+app.get('/developer', function(req, res) {
+
+    res.render('developer');
+});
+
 //Menampilkan halaman login (login.ejs)
 app.get('/login', function(req, res) {
     const pesan = req.flash('pesan')[0];
